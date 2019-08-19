@@ -6,13 +6,13 @@ const VideoDetails = ({video}) => {
         return <div align='center' className="mt-sm-5">Search on my Youtube API App </div>
     }
 
-    const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
+    //console.log(video.id.videoId)
     
     return (
        
         <div className='mt-sm-4'>
             <div>
-            <iframe width="1200" height="590" src={videoSrc} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='allowfullscreen' title='video'></iframe>
+            <iframe width="1200" height="590" src={`https://www.youtube.com/embed/${video.id.videoId}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen='allowfullscreen' title='video'></iframe>
             </div>
             <div>
                 <h5>{video.snippet.title}</h5>

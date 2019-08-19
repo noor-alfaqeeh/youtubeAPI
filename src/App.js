@@ -23,7 +23,7 @@ class App extends Component {
         key:'AIzaSyAU9SocF0Ii9PLPjgcgYhKL1Iadckg25IY',
         q:wordFormSearchBar,
         type:"video",
-        videoEmbeddable: 'any'
+        embeddable: 'true'
       }
     })
     this.setState({
